@@ -1,1 +1,16 @@
 /* hello commit test.  */
+:root{
+    
+--primary-color: rgb(107, 107, 255);
+--secondary-color: rgb(247, 241, 156);
+--overlay-color: rgb(173, 118, 118);
+--menu-speed: 0.75s;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+font-family: 'Roboto', sans-serif;
+}
