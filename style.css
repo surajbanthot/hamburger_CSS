@@ -1,8 +1,7 @@
-/* hello commit test.  */
 :root {
   --primary-color: rgba(13, 110, 139, 0.75);
-  --secondary-color:  rgba(241, 230, 123, 0.75);
-  --overlay-color:  rgba(247, 217, 162, 0.85);
+  --secondary-color: rgba(229, 148, 0 , 0.9);
+  --overlay-color: rgba(24, 39, 51 , 0.85);
   --menu-speed: 0.75s;
 }
 
@@ -10,12 +9,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
- font-family: "Roboto", sans-serif;
 }
 
-.body {
-     
-  line-height: 2rem;
+body {
+  font-family: 'Roboto', sans-serif;
+  line-height: 1.4;
 }
 
 .container {
@@ -27,14 +25,14 @@
 
 #showcase {
   background: var(--primary-color);
-  color: #ffffff;
+  color: #fff;
   height: 100vh;
   position: relative;
 }
 
-#showcase:before{
-  content: "";
-  background: url('/img/showcase.jpg') no-repeat center center/cover;
+#showcase:before {
+  content: '';
+  background: url('../img/showcase.jpg') no-repeat center center/cover;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,33 +41,34 @@
   z-index: -1;
 }
 
-
-#showcase .showcase-container{
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    height: 100%;
+#showcase .showcase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100%;
 }
 
-#showcase h1{
-    font-size:3rem;
+#showcase h1 {
+  font-size: 4rem;
 }
+
 #showcase p {
-    font-size: 1.3rem;
+  font-size: 1.3rem;
 }
 
-.btn{
-    display: inline-block;
-    border: none;
-    background: #ffff;
-    padding: 0.75rem 1.5rem;
-    margin-top: 1rem;
-    transition: all 1s ease-in-out;
-    text-decoration: none;
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--primary-color);
+  color: #fff;
+  padding: 0.75rem 1.5rem;
+  margin-top: 1rem;
+  transition: opacity 1s ease-in-out;
+  text-decoration: none;
 }
 
-.btn:hover{
-    opacity: 0.6;
+.btn:hover {
+  opacity: 0.7;
 }
